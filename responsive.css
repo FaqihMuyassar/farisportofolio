@@ -1,0 +1,297 @@
+:root {
+    --primaryTextColor: #232e35;
+    --secondaryTextColor: #656d72;
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9;
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #f9f9f9;
+    --thirdBackgroundColor: #dad7f0;
+    --primaryIconColor: #c1bae8;
+    --primaryIconColorHover: rgb(57, 88, 200);
+    --sectionPadding: 6rem 0;
+    --itemBorderRadius: 0.7rem;
+}
+
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-3 {
+        gap: 1rem;
+    }
+
+    .pre-title {
+        margin: auto;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column-reverse;
+        background: var(--primaryBackgroundColor);
+        border-left: 1px solid var(--borderColor);
+        z-index: 9;
+        transform: translateX(100%);
+        transition: .3s ease-in-out;
+    }
+
+    nav ul {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+        background: var(--thirdBackgroundColor);
+    }
+
+    :root {
+        --sectionpadding : 4rem 0
+    }
+
+    .hero-name {
+        text-align: center;
+    }
+
+    .service {
+        padding: 3rem 2rem;
+        text-align: center;
+        height: 400px;
+        background: var(--primaryBackgroundColor);
+        border-radius: var(--itemBorderRadius);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column-reverse;
+        background: var(--primaryBackgroundColor);
+        border-left: 1px solid var(--borderColor);
+        z-index: 9;
+        transform: translateX(100%);
+        transition: .3s ease-in-out;
+    }
+
+    nav ul {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    :root {
+        --sectionpadding : 4rem 0
+    }
+
+    .hero-name {
+        text-align: center;
+    }
+
+    .pre-title {
+        margin: auto;
+    }
+
+    .hero-left {
+        margin-top: 50px;
+    }
+
+    .hero-left p {
+        text-align: center;
+    }
+
+    #hero {
+        grid-template-columns:repeat(auto-fit, minmax(380px, 1fr));
+    }
+
+    #hero img {
+        margin-left: 0px;
+    }
+
+    #services {
+        height: 110vh;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .skills {
+        height: 200vh;
+    }
+
+    #about {
+        height: 75vh;
+        margin-top: 900px;
+    }
+
+    #about .pre-title {
+        margin-top: -100px;
+    }
+
+    #contact {
+        margin-top: 250px;
+    }
+
+    .contact-title {
+        margin-top: -100px;
+    }
+
+    .contact-right {
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .service {
+        background: var(--thirdBackgroundColor);
+        height: 300px;
+        width: 350px;
+    }
+
+    .service-icon {
+        background: var(--primaryIconColor);
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    #hero {
+        left: 0;
+        width: 360px;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    #hero {
+        height: 130vh;
+    }
+
+    .hero-right {
+        margin-top: -550px;
+    }
+
+    .hero-right img {
+        margin-left: 0px;
+    }
+
+    .hero-name {
+        text-align: center;
+    }
+
+    .pre-title {
+        margin: auto;
+    }
+
+    .hero-left {
+        width: 80%;
+        margin-top: -150px;
+        margin-inline: auto;
+    }
+
+    .hero-left p {
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 46px;
+    }
+
+    #services {
+        height: 200vh;
+    }
+
+    .services .pre-title {
+        margin-top: -100px;
+    }
+
+    .service {
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .skill img {
+        margin-left: 130px;
+    }
+
+    .skill4 img {
+        margin-left: 90px;
+    }
+
+    .skill2 img {
+        margin-left: 150px;
+    }
+
+    #about {
+        height: 130vh;
+        margin-top: 1300px;
+    }
+
+    #about .pre-title {
+        margin-top: -300px;
+    }
+
+    .contact-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .contact-title {
+        margin-top: -300px;
+    }
+
+    .contact-item p {
+        font-size: 12px;
+    }
+
+    .contact-item h4 {
+        font-size: 20px;
+    }
+
+    .contact-item svg {
+        width: 20px;
+    }
+
+    .service {
+        background: var(--thirdBackgroundColor);
+        height: 300px;
+        width: 350px;
+        margin-left: 20px;
+    }
+
+    .service-icon {
+        background: var(--primaryIconColor);
+    }
+}
